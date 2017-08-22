@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.sara{background-color:#F1AFEC;
+padding:2px;border:12px  solid #8C0D82;
+border-radius:50%;
+width: 400px;
+height: 400px;
+margin-left:400px;
+margin-top:100px;
+-webkit-animation-name:saravana;
+-webkit-animation-duration:4s;
+animation-name:saravana;
+animation-duration:4s;
+}
+@keyframes saravana{
+from{background-color:#42D568;}
+to{background-color:#EEE68A;}
+}
+.va{
+background-color:lightblue;
+width:100px:
+height:350px;
+padding:3px;border:2px solid #A2B934;
+margin-top:120px;
+margin-left:30px;
+margin-right:20px;
+}
+.ans{
+background-color:black;
+margin-bottom:150px;
+padding:2px;
+border:2px solid red;
+width:200px;
+height:20px;
+text-align:center;
+}
+</style>
+</head>
+<body style="background-color:#24BAB1">
+<div class="sara">
+
+<form>
+<center>
+<h1 style="text-align:center;color:#320530;font-family:Lucida Calligraphy;">Flames</h1>
+<div class="va">
+<tr> FiRsTNaMe:<input type="text" name="fname" placeholder=" your name" id="one"></tr></br>
+</br>
+</br>
+<tr>SEcONdNAmE:<input type="text" name="sname" placeholder="your loveable person name" id="two"></tr>
+</div>
+</br>
+</br>
+<div class ="ans">
+<button type="button" name="saravana" id="three" onclick="myfunc()">PReSsMe</button>
+</div>
+</center>
+</form>
+</div>
+  <p class="love" id="demo" style="text-align:center;font-size:60px;font-family:Blackadder ITC"></p><br>
+<script>
+function myfunc()
+{
+var name="flames";
+var book;
+var name1=document.getElementById("one").value;
+var name2=document.getElementById("two").value;
+var s=name1.length-name2.length;
+if(s==0)
+{
+book="60";
+}
+if(s<0)
+{
+s=(s)*(-1);
+}
+var i,j;
+for( i=0;i<s;i++)
+		{
+			if(s<6)
+			{
+				d=name.charAt(s);
+				break;
+			}
+			if(s>6)
+			{
+				while(s>=6)
+				{
+					s=s-6;
+				}
+				 j=s;
+		      d=name.charAt[j];
+				break;
+			}
+		}
+
+
+switch (d)
+	{
+	case 'f':
+	{
+		book="60";
+		break;
+	}
+	case 'l':
+	{
+		book="75";
+		break;
+	}
+	case 'a':
+	{
+		book="50";
+		break;
+	}
+	case 'm':
+	{
+		book="100";
+		break;
+	}
+	case 'e':
+	{
+		book="0";
+		break;
+	}
+	case 's':
+	{
+	     book="25";
+		break;
+	}
+}
+document.getElementById("demo").innerHTML=book;
+}
+</script>
+</body>
+</html>
